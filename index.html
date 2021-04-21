@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="contar()">Executar</button>
+
+<div id="cont"></div>
+
+<script>
+function contar() {
+  var n = prompt("Digite um número");
+  if (n != null && n > 0) {
+    for(var i = 1; i <= n; i = i + 1 ){
+        var div = document.getElementById("cont");
+        div.appendChild(document.createTextNode(i));
+    }
+  }
+}
+
+</script>
+
+<div id="cont"> Vai aparecer aqui ó </div>
+
+</body>
+</html>
